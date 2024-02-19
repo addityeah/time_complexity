@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-def curve_func(n, a, option):
+def curve_func(a, n, option):
     if (option == 1):
         return a * n
     
@@ -25,7 +25,7 @@ def main():
     y = np.array([0, 0.8, 0.9, 0.1, -0.8, -1.0])
 
     # Fit the curve to the data using curve_fit
-    params, covariance = curve_fit(curve, x, y)
+    params = curve_fit(curve, x, y)
 
     # Extract the fitted parameters
     a_fit = params
