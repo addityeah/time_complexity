@@ -1,34 +1,31 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
+from scipy.optimize import curve_fit 
 
-def curve_func(a, n, option):
-    if (option == 1):
-        return a * n
-    
-    elif (option == 2):
-        return a * n ** 2
-    
-    elif (option == 3):
-        return a * np.log(n)
-    
-    elif (option == 4):
-        return a * n * np.log(n)
-    
+def curve0(a):
+    return a
 
+def curve1(x, a, b):
+    return a * x + b
+
+def curve2(x, a, b, c):
+    return a * x**2 + b * x + c
+
+def curve3(x, a, b):
+    return a * np.log2(x) + b
+
+def curve4(x, a, b, c):
+    return a * np.log2(x) * x + b * x + c
+    
 def main():
-    option = input("Enter the type of curve you want to fit: \n 1. Linear \n 2. Quadratic \n 3. Logarithmic \n 4. nlogn \n")
-    
-    curve = curve_func(option)
-    
     x = np.array([0, 1, 2, 3, 4, 5])
     y = np.array([0, 0.8, 0.9, 0.1, -0.8, -1.0])
 
     # Fit the curve to the data using curve_fit
-    params = curve_fit(curve, x, y)
-
-    # Extract the fitted parameters
-    a_fit = params
-
-    # Generate y values using the fitted parameters
-    y_fit = curve_func(x, a_fit)
+    fitp0, fite0 = curve_fit(curve0, x, y)
+    fitp1, fite1 = curve_fit(curve1, x, y)
+    fitp2, fite2 = curve_fit(curve2, x, y)
+    fitp3, fite3 = curve_fit(curve3, x, y)
+    fitp4, fite4 = curve_fit(curve4, x, y)
+    
+    print(fite0, fite1, fite2, fite3, fite4)
