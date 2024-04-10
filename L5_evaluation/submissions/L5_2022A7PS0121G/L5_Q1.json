@@ -1,0 +1,86 @@
+[
+    {
+        "timestamp": "2024-02-23 16:16:57",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n    }\n    return count;\n}\n",
+        "programHash": "6969da730065c0ac171e37abd62abcfc4be16705620278435302d975e88e29c2",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:17:10",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n    }\n    return count;\n}\n",
+        "programHash": "6969da730065c0ac171e37abd62abcfc4be16705620278435302d975e88e29c2",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:17:40",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n    }\n    return count;\n}\n",
+        "programHash": "6969da730065c0ac171e37abd62abcfc4be16705620278435302d975e88e29c2",
+        "testcase": "T3",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:28:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(i) != s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(i);\n\n    }\n    return count;\n}\n",
+        "programHash": "c2d13adc6e0ebd775b3b398c2891f3fac17e385e9a466eda3c421fd84a0e37da",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:29:33",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(i) == s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(i);\n\n    }\n    return count;\n}\n",
+        "programHash": "e0e186fb47d3884ee8f8cec1d1b2c1c0b1fcfe4d82c9403cad5c0a455fd126cc",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:29:39",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(i) == s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(i);\n\n    }\n    return count;\n}\n",
+        "programHash": "e0e186fb47d3884ee8f8cec1d1b2c1c0b1fcfe4d82c9403cad5c0a455fd126cc",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:30:09",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(i) == s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(i);\n\n    }\n    return count;\n}\n",
+        "programHash": "e0e186fb47d3884ee8f8cec1d1b2c1c0b1fcfe4d82c9403cad5c0a455fd126cc",
+        "testcase": "T3",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:30:50",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(nums[i]) == s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(nums[i]);\n\n    }\n    return count;\n}\n",
+        "programHash": "7b7929fa7028badc19456a925df18aa181d6f4a8b40964b232329a6a6d9273dc",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:30:53",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        unordered_set<int> s;\n        if(s.find(nums[i]) == s.end()){\n            while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n                }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n                }\n            else{\n                k--;\n                }\n            }\n        }\n        s.insert(nums[i]);\n\n    }\n    return count;\n}\n",
+        "programHash": "7b7929fa7028badc19456a925df18aa181d6f4a8b40964b232329a6a6d9273dc",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:35:27",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    unordered_set<int> s;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        if(s.find(nums[i]) != s.end()){\n            continue;\n        }\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n        s.insert(nums[i]);\n\n    }\n    return count;\n}\n",
+        "programHash": "53646cd01d50232652a04aaa6ae6143c71c2f13376d2bec55ae270872f6e9c9b",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:35:31",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    unordered_set<int> s;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        if(s.find(nums[i]) != s.end()){\n            continue;\n        }\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n        s.insert(nums[i]);\n\n    }\n    return count;\n}\n",
+        "programHash": "53646cd01d50232652a04aaa6ae6143c71c2f13376d2bec55ae270872f6e9c9b",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:35:36",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    sort(nums.begin(), nums.end());\n    int n = nums.size();\n    int count = 0;\n    unordered_set<int> s;\n    for(int i=0; i<n; i++){\n        int j = i+1;\n        int k = n-1;\n        if(s.find(nums[i]) != s.end()){\n            continue;\n        }\n        while(j < k){\n            if((nums[i] + nums[j] + nums[k]) == 0){\n                count++;\n                j++;\n                k--;\n            }\n            else if((nums[i] + nums[j] + nums[k]) < 0){\n                j++;\n            }\n            else{\n                k--;\n            }\n        }\n        s.insert(nums[i]);\n\n    }\n    return count;\n}\n",
+        "programHash": "53646cd01d50232652a04aaa6ae6143c71c2f13376d2bec55ae270872f6e9c9b",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]

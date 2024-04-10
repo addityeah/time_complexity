@@ -1,0 +1,184 @@
+[
+    {
+        "timestamp": "2024-02-23 16:48:13",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i == 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "0d565ae9f4792ef910cbc49ae5935c983562855166103511d40dcff6342b1e0b",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:50:18",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i < 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "b8ce6cb1a4b85f5f17246dffe146021072e7a88e722020fc283a665a5c844b41",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:53:34",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(i >= 0 && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    if((i-1)/k >= 0)\n    {\n        max_heapify(A, k, (i-1)/k);\n    }\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "393af72a7ca3847e593e6e62a3ceeb18768517ee66f201cfeb451ec16325e9c3",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:58:48",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(i >= 0 && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "6c56381d47c2bcdf8f39ef7fc4a29b449b16124935e9df840461932da783ccb7",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:59:13",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i == 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(i >= 0 && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "37f7c45ed08d04e34740d79eb7d1b046d1c5de0aceb55eeb18ae0408893d9273",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:00:35",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if((i-1)/k == 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(i >= 0 && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "01a7fe8797d68679280abb6baf1462a21f06399ec34e8eed0eb412b3465a7076",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:02:50",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if((i-1)/k < 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if(A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "17376aa968c8a24a5b8e7e1df7a741026e3b7d3f7c7cb617120208479fdd2d20",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:05:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if((i-1)/k < 0)\n    {\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n    max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "f456db44e3a569caf297bcbf24d4334ef6a219afeb14595ba36b1ef6019369e4",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:06:28",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n    max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "dd3926ed7aeb4a91029f0a3866b702800a94f65824fd26fcc23158aabbc691a5",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:07:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    if((i-1)/k >= 0)\n    {\n        max_heapify(A, k, (i-1)/k);\n    }\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "101f7b7fd183cc3423b3e5aa4fa7d33109435d5313def2246acf4d18872d60b8",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:08:58",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "83e6e6a194624dfcfe90ed0a2b92099d6dfc2a51f6649821148bbf6532d4e097",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:09:26",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i < 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "dc2c5a8b102f6516406b613a83f09a8762fe6cf87e2d9c7843fd34664bd0aed6",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:10:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i == 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "07a0916f3ec887d57248bbc36d2c7ce7c54284cdd77f0921044c331d1513b5b8",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:12:22",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    cout<<-1/3;\n    if(i == 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "d5c1cb5d712e2fc42a6935c0e8665beb9bc1e7435f9717f72134a9c29b66a085",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:14:14",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    \n    if(i < 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "0b92d153a13e9fe7751dacc7513919ca41b5760099fb94deef6500e9abef8720",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:14:43",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    cout << 10 << endl;\n    if(i < 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "8af8546a83f23977a89331f729a966a242cc34c9de8d58f00ba3e556e0f881d9",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:16:03",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i < 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "f7fdcc143ed248e02c66b71322fbc611a14ca20dfaf8af62d0088b312ee2f929",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:18:39",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i == 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    \n        max_heapify(A, k, (i-1)/k);\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "ce03e4832817e4b5d7b0b7e99af7160772a9b94038ef520607fbf078129053ed",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:21:09",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n    }\n    if((i-1)/k >= 0){\n        max_heapify(A, k, (i-1)/k);\n    }\n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "10dd03f91035f6a5a2f807eb8be3356bbe13e674362fb146c8658118255e0c28",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:26:35",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    if(i < 0){\n        return;\n    }\n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, (i-1)/k);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "fdad30dc853e8f726b803ad7dee65ecbd9c0bdec4cccf248dedef1385d78d9d4",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:27:11",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, (i-1)/k);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "6dbb04e8d2266721d5b1874406ca0bb23aee64669ea03e5e7d17725cc6be0e41",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:28:33",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        if((i-1)/k >= 0){\n        max_heapify(A, k, (i-1)/k);\n        }\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "07d1404fbd771a3498dc7d8faad9fe7fa601fd18a1f823a227f6be7240b749e9",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:35:28",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, i);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "222b569a4ffa55b1cb5f4270f2806fbeb8896bb66d6117d5630113a81d8cc0c0",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:41:09",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, largest);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "d814fe4e80415b326ca76def37fa72892a704f6990557c6a33c15d01c5c6e191",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:41:17",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, largest);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "d814fe4e80415b326ca76def37fa72892a704f6990557c6a33c15d01c5c6e191",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:41:22",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid max_heapify(vector<int>& A, int k, int i)\n{   \n    int n = A.size();\n    int largest = i;\n    for(int j = 1; j <= k; j++)\n    {\n        if((k*i + j) < n && A[k*i + j] > A[largest]){\n            largest = k*i + j;\n        }\n    }\n    if(largest != i)\n    {\n        swap(A[largest], A[i]);\n        max_heapify(A, k, largest);\n    }\n        \n    return;\n\n}\n\nvoid build_max_heap(vector<int>& A, int k)\n{\n    int n = A.size();\n    for(int i = (n-2)/k; i >= 0; i--)\n    {\n        max_heapify(A, k, i);\n    }\n    return;\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    build_max_heap(A, k);\n    return;\n}\n",
+        "programHash": "d814fe4e80415b326ca76def37fa72892a704f6990557c6a33c15d01c5c6e191",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]

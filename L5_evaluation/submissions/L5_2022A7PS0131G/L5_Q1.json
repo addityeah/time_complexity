@@ -1,0 +1,156 @@
+[
+    {
+        "timestamp": "2024-02-23 16:10:28",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    vector<pair<int, int>> numsMap;\n    for(int i =0;i < nums.size(); i++){\n        numsMap.push_back({nums[i], i});\n    }\n\n    sort(numsMap.begin(), numsMap.end());\n    for(int i =0;i < nums.size(); i++){\n        cout<<numsMap[i].first<<\" \"<<numsMap[i].second<<endl;\n    }\n\n\n    return 0;\n}\n",
+        "programHash": "13bc3ff150304a8c8d56fc4b0a41824690852c1a879b55a349a5a34adb41ca99",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:56:23",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j, sum);\n        if(*p == sum){\n            total++;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "31bd703405000b65299438819ea169ed9c6ebae87d732a5186f999a9f9da4dcb",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:57:32",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j-1, sum);\n        if(*p == sum){\n            total++;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "96589b3b415788cf2b10ac9377751b94470d9f82a015b97d7524f306d1936318",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:58:48",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j-1, sum);\n        if(*p == sum){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "6ee0d5ba5103d631635c703dfe57c1bee3180197ab009c840cb93809a065317a",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:59:42",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        cout<<nums[i]<<\" \";\n    }\n    cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j-1, sum);\n        if(*p == sum){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "dbe524f6e757f2861382e1af1c96717e861f4c428f843651bfda0ea3678d9a76",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:00:11",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        cout<<nums[i]<<\" \";\n    }\n    cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j-1, sum);\n        if(*p == sum){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "79dcb892a44754f1726b86106c9ce1b6a1776867c40e224b732eaea904217846",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:00:29",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.end() - j-1, sum);\n        if(*p == sum){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "da6e8c2b6cc2c94aafeec02d9be529ad2b1ba3c72a2ffc64a4ddc5a55b1c02c9",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:01:41",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        cout<<nums[i]<<\" \";\n    }\n    cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(*p == sum){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "6b674c7a071105cd491c550431478fe58c1ae31de4fd923511451a08da819cb5",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:02:50",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(*p == sum){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "e03b86b514947768aea8353dea932019007ad24f84c60f72745ba5bfc8f45fd2",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:04:31",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = lower_bound(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(*p == sum){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "9dea09a52f8fe4571947833705a4f5a1d548c209b861d1e0bbc7ae11205bf3a4",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:05:47",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        // auto p = binary_search(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(binary_search(nums.begin() + i+ 1, nums.begin() + j-1, sum)){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "1425446e21dd38f5db1524a7dfd2d9fce707d9bdc39db02b1c14eb0b9b6c322a",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:06:47",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = find(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(p != nums.end()){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "f57155a1c26d5606d5f0b7f0b8410c66e38f7e2a3c9fde93ae72b2a240d2521e",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:07:01",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = find(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(p != nums.end()){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "2c15f6bfdcace8cab8b940135f25f969bcaf10b7c4fc589ddfdba604b4369db5",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:10:59",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find(nums, start, mid -1, val);\n    } else{\n        return find(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        auto p = find(nums.begin() + i+ 1, nums.begin() + j-1, sum);\n        if(p != nums.end()){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p - nums.begin()<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "f6b211630993fe915c1c247bf76c33cadc7b136495746f62fa38e65a9110c542",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:12:05",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "e4a5100890a50fb248270d6b1f41a5d48e4975f745119f803ba68f56106a97b6",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:12:28",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "d67d93415b6aa26847b7f3a931c65586ff3daa863576eafa484d75a72dd5e1b2",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:13:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "d67d93415b6aa26847b7f3a931c65586ff3daa863576eafa484d75a72dd5e1b2",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:13:53",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        cout<<nums[i]<<\" \";\n    }\n    cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        for(int j = nums.size() -1; j >i; j--){\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "983ee0d9cc8371f0f82497a262205d761f73a2c56f0fce66d1e148c6839c30b4",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:17:17",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    for(int i =0; i < nums.size(); i++){\n        cout<<nums[i]<<\" \";\n    }\n    cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        if(i > 0 && nums[i-1] == nums[i]){\n            continue;\n        }\n        for(int j = nums.size() -1; j >i; j--){\n            if(j < nums.size()-1 && nums[j] == nums[j+1]){\n                continue;\n            }\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "d499b6a5c83628f594a736886a76b1568168199be9cd0158a3634f15c9a096b1",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:17:27",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        if(i > 0 && nums[i-1] == nums[i]){\n            continue;\n        }\n        for(int j = nums.size() -1; j >i; j--){\n            if(j < nums.size()-1 && nums[j] == nums[j+1]){\n                continue;\n            }\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "26e1af269ee14377be37c070ff20bff0fe87ef03ea3503926928c2fba14aa56f",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:17:34",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        if(i > 0 && nums[i-1] == nums[i]){\n            continue;\n        }\n        for(int j = nums.size() -1; j >i; j--){\n            if(j < nums.size()-1 && nums[j] == nums[j+1]){\n                continue;\n            }\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "26e1af269ee14377be37c070ff20bff0fe87ef03ea3503926928c2fba14aa56f",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:17:38",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint find_index(vector<int>& nums, int start, int end, int val){\n    if(start > end){\n        return -1;\n    }\n    int mid = start + (end - start)/2;\n    if(nums[mid] == val){\n        return mid;\n    } else if (nums[mid] > val){\n        return find_index(nums, start, mid -1, val);\n    } else{\n        return find_index(nums, mid+1, end, val);\n    }\n}\n\nint solve(vector<int>& nums)\n{\n    int i = 0;\n    int j = nums.size()-1;\n    sort(nums.begin(), nums.end());\n    int sum;\n    int total =0;\n    // for(int i =0; i < nums.size(); i++){\n    //     cout<<nums[i]<<\" \";\n    // }\n    // cout<<endl;\n    for(int i =0; i < nums.size(); i++){\n        if(i > 0 && nums[i-1] == nums[i]){\n            continue;\n        }\n        for(int j = nums.size() -1; j >i; j--){\n            if(j < nums.size()-1 && nums[j] == nums[j+1]){\n                continue;\n            }\n        sum = -(nums[i] + nums[j] );\n        int p = find_index(nums, i+1, j-1, sum);\n        if(p != -1){\n            total++;\n            // cout<<i<<\" \"<<j<<\" \"<<p<<endl;\n        }}\n\n    }\n\n\n    return total;\n}\n",
+        "programHash": "26e1af269ee14377be37c070ff20bff0fe87ef03ea3503926928c2fba14aa56f",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]

@@ -6,15 +6,15 @@ def curve(x, a, b, c, d, e):
     return a*x**2 + b*np.log2(x)*x + c*x + d*np.log2(x) + e
     
 def main():
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
-    y = np.array([0, 0.8, 0.9, 0.1, -0.8, -1.0, -0.5, 0.4, 0.9, 1.0, 0.5, -0.4, -0.9, -1.0, -0.5, 0.4, 0.9, 1.0, 0.5, -0.4, -0.9])
+    testcase_size = np.array([1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73, 75, 77, 79, 81, 83, 85, 87, 89, 91, 93, 95, 97, 99, 101])
+    time_taken = np.array()
 
     # Fit the curve to the data using curve_fit
-    fitp, fite = curve_fit(curve, x, y)
+    fitp, fite = curve_fit(curve, testcase_size, time_taken)
     
-    y5 = curve(x, *fitp)
+    fitting_curve = curve(testcase_size, *fitp)
 
-    plt.plot(x, y5, label='fit')
+    plt.plot(testcase_size, fitting_curve, label='fit')
     plt.legend()
     plt.show()
 

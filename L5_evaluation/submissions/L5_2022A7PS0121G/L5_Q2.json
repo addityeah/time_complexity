@@ -1,0 +1,100 @@
+[
+    {
+        "timestamp": "2024-02-23 16:54:58",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (n/k);\n    for(int i=start; i>0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "36adceda0d444975b2f0e4655ebdc081d86b43b05b8eb871e4c358eb599aa1af",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:55:58",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (n/k);\n    for(int i=start; i>0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "e9054fa928276434d7fa9015e1b0c0f7acd1c45848b52e7ad94d2070db873146",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:57:20",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "759b11c49fca09e9f51ceed8aabe3a34d1e63ef7483b4e47521662f6e809442c",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:58:23",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k - 1;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "2cfc5d1ceea43367b6e193b5fa9fffbc196da4d13772f0277dbef92d78aed29d",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:59:33",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k ;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "917b003c13bb08e3ea5d7f5439062cfa24c0b92d594b73398ced0a2b519c1601",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:03:27",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k - 1;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "bb0ed3cf5e9b15f0163ffddab3b7c5621c8dc9958282d96b48e3102199d651e1",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:04:07",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k - 1;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "bb0ed3cf5e9b15f0163ffddab3b7c5621c8dc9958282d96b48e3102199d651e1",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:04:14",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k - 1;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "bb0ed3cf5e9b15f0163ffddab3b7c5621c8dc9958282d96b48e3102199d651e1",
+        "testcase": "T3",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:08:57",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n    if(largest == a){\n        cout << \"HI\" << endl;\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k - 1;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "098aab868512526d5ae71c0084b65469e37a8c7af58f9b37b3783fd06e4f7891",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:15:11",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n            break;\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n        cout << \"H\" << endl;\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "0ed51a06638b72809ce75cc1cf2f158e891ff7089eec1bc576fc7a2968525799",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:18:32",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = n*k + i + 1;\n    }\n\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "88e1acf130ad500d332ad55c2494a6b140dc1c5d8245b41f70a16e8bcaec1378",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 17:19:49",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = a*k + i + 1;\n    }\n\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "e46125ca09aa3992e85403e6d9644fa3d0b071316d07ae29d6600b6557e85e70",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:19:55",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = a*k + i + 1;\n    }\n\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "e46125ca09aa3992e85403e6d9644fa3d0b071316d07ae29d6600b6557e85e70",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 17:20:00",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int> &arr, int k, int n, int a){\n    int largest = a;\n    vector<int> nodes(k);\n    for(int i=0; i<k; i++){\n        nodes[i] = a*k + i + 1;\n    }\n\n    for(int i=0; i<k; i++){\n        if(nodes[i] < n && arr[largest] < arr[nodes[i]]){\n            largest = nodes[i];\n        }\n    }\n\n    if(largest != a){\n        int temp = arr[a];\n        arr[a] = arr[largest];\n        arr[largest] = temp;\n        maxHeapify(arr, k, n, largest);\n    }\n}\n\n\nvoid buildHeap(vector<int> &arr, int k, int n){\n    int start = (double)n/(double)k;\n    for(int i=start; i>=0; i--){\n        maxHeapify(arr, k, n, i);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    int n = A.size();\n    buildHeap(A, k, n);\n}\n",
+        "programHash": "e46125ca09aa3992e85403e6d9644fa3d0b071316d07ae29d6600b6557e85e70",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]

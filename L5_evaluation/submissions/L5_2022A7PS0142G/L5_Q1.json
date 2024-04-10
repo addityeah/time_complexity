@@ -1,0 +1,58 @@
+[
+    {
+        "timestamp": "2024-02-23 16:18:24",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n            }\n            else if(left < right && target < sum){\n                right--;\n            }\n            else if(left < right && target > sum){\n                left++;\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "ab866a77a38e25d20cf519c2968b9d991b98e8f60cb39cbb4b7371d71a914bb3",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:18:38",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n            }\n            else if(left < right && target < sum){\n                right--;\n            }\n            else if(left < right && target > sum){\n                left++;\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "ab866a77a38e25d20cf519c2968b9d991b98e8f60cb39cbb4b7371d71a914bb3",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:22:36",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                cout<<nums[i] <<\" \" << nums[left] << \" \" << nums[right]<< endl;\n                left++;\n            }\n            else if(left < right && target < sum){\n                right--;\n            }\n            else if(left < right && target > sum){\n                left++;\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "1935048d0468cc356124efe23c72f167867d081a5b0c5cc85ed12cc8a6c268f9",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:26:43",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n                right--;\n                while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target < sum){\n                right--;\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target > sum){\n                left++;\n                 while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "3052813ff88efbcfddce03320baa966b0c4add95fb7c7f25d45c5b4f56ed9afd",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:26:47",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n                right--;\n                while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target < sum){\n                right--;\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target > sum){\n                left++;\n                 while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "3052813ff88efbcfddce03320baa966b0c4add95fb7c7f25d45c5b4f56ed9afd",
+        "testcase": "T2",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:28:43",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        if(i != 0){\n            while(i < n-2 && nums[i] == nums[i-1]){\n                i++;\n            }\n        }\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n                right--;\n                while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target < sum){\n                right--;\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target > sum){\n                left++;\n                 while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "e1e8f8abbfea15ab8dd2423082c346db87cc536f0e3a015fc55734a707c9ed34",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:28:47",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        if(i != 0){\n            while(i < n-2 && nums[i] == nums[i-1]){\n                i++;\n            }\n        }\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n                right--;\n                while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target < sum){\n                right--;\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target > sum){\n                left++;\n                 while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "e1e8f8abbfea15ab8dd2423082c346db87cc536f0e3a015fc55734a707c9ed34",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:28:54",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nint solve(vector<int>& nums)\n{\n    int n = nums.size();\n    sort(nums.begin(), nums.end());\n    int count = 0;\n    for(int i = 0; i < n-2; i++){\n        if(i != 0){\n            while(i < n-2 && nums[i] == nums[i-1]){\n                i++;\n            }\n        }\n        int left = i+1;\n        int right = n-1;\n\n        int target = -nums[i];\n        while(left < right){\n            int sum = nums[left]+nums[right];\n\n            if(left < right && target == sum){\n                count++;\n                left++;\n                right--;\n                while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target < sum){\n                right--;\n                 while(left < right && nums[right] == nums[right+1]){\n                    right--;\n                }\n            }\n            else if(left < right && target > sum){\n                left++;\n                 while(left < right && nums[left] == nums[left-1]){\n                    left++;\n                }\n            }\n        }\n    }\n\n\n    return count;\n}\n",
+        "programHash": "e1e8f8abbfea15ab8dd2423082c346db87cc536f0e3a015fc55734a707c9ed34",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]
