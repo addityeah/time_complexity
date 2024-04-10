@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit 
+import EvaluateSubmissions as es
 
 def curve(x, a, b, c, d, e):
     return a*x**2 + b*np.log2(x)*x + c*x + d*np.log2(x) + e
