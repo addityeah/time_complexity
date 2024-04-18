@@ -2,8 +2,8 @@ import subprocess
 import time
 import pandas as pd
 
-def compile_program(program_path, flags=[]):
-    subprocess.run(["g++", "-o", "program", program_path] + flags)
+def compile_program(program_path, flags=[]): 
+    subprocess.run(["g++", "-o", "program", program_path] + flags) # Combining program with flags, null for now
 
 def calculate_execution_time(program_path, input_data):
     start_time = time.time()
@@ -17,7 +17,7 @@ def calculate_execution_time(program_path, input_data):
         return None
 
     end_time = time.time()
-    execution_time = end_time - start_time
+    execution_time = end_time - start_time # get execution time
     return execution_time
 
 def get_testcases():
