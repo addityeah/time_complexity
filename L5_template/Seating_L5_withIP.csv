@@ -1,0 +1,286 @@
+Machine,IP,Name,,Roll,Email
+Zone-1 115,10.1.5.125,Suryansh,Singhai ,2020A7PS0127G,f20200127@goa.bits-pilani.ac.in
+Zone-1 120,10.1.5.130,Priyashi,Choudhary ,2020B2A72094G,f20202094@goa.bits-pilani.ac.in
+Zone-1 003,10.1.5.13,Adithi,A,2021A7PS1211G,f20211211@goa.bits-pilani.ac.in
+Zone-3B 046,10.1.7.106,Saksham,Garg,2021A7PS2083G,f20212083@goa.bits-pilani.ac.in
+Zone-1 061,10.1.5.71,Arush,Bansal ,2021A7PS2458G,f20212458@goa.bits-pilani.ac.in
+Zone-1 056,10.1.5.66,Akshat,Dutta ,2021A7PS2539G,f20212539@goa.bits-pilani.ac.in
+Zone-1 041,10.1.5.51,Abhai,Supreeth Chevula  ,2021A7PS2673G,f20212673@goa.bits-pilani.ac.in
+Zone-1 117,10.1.5.127,Unmesh,Bhole ,2021B1A71949G,f20211949@goa.bits-pilani.ac.in
+Zone-2 019,10.1.6.29,Jaiaditya,Agrawal ,2021B1A72138G,f20212138@goa.bits-pilani.ac.in
+Zone-2 072,10.1.6.82,Rohit,Pagar ,2021B1A72139G,f20212139@goa.bits-pilani.ac.in
+Zone-1 089,10.1.5.99,Omkar,Sathe ,2021B1A72280G,f20212280@goa.bits-pilani.ac.in
+Zone-2 087,10.1.6.97,Ankita,Vaishnobi Bisoi  ,2021B1A72306G,f20212306@goa.bits-pilani.ac.in
+Zone-1 037,10.1.5.47,Mahatva,Garg ,2021B1A72408G,f20212408@goa.bits-pilani.ac.in
+Zone-2 111,10.1.6.121,Chandrika,Singh Jadon  ,2021B1A72939G,f20212939@goa.bits-pilani.ac.in
+Zone-3B 008,10.1.7.68,Suraz,Kumar ,2021B2A71602G,f20211602@goa.bits-pilani.ac.in
+Zone-2 116,10.1.6.126,Chahak,Punamiya,2021B2A72355G,f20212355@goa.bits-pilani.ac.in
+Zone-1 020,10.1.5.30,Aditya,Nair ,2021B2A72364G,f20212364@goa.bits-pilani.ac.in
+Zone-2 114,10.1.6.124,Harshith,Reddy Mamidi  ,2021B2A73017G,f20213017@goa.bits-pilani.ac.in
+Zone-2 113,10.1.6.123,Rupesh,Yarlagadda ,2021B3A70839G,f20210839@goa.bits-pilani.ac.in
+Zone-1 045,10.1.5.55,Om,Joshi ,2021B3A70958G,f20210958@goa.bits-pilani.ac.in
+Zone-1 018,10.1.5.28,Sarang,S ,2021B3A70966G,f20210966@goa.bits-pilani.ac.in
+Zone-2 043,10.1.6.53,Aadi,Nesarkar ,2021B3A70967G,f20210967@goa.bits-pilani.ac.in
+Zone-2 102,10.1.6.112,Anirudh,Jayakishan ,2021B3A70979G,f20210979@goa.bits-pilani.ac.in
+Zone-1 027,10.1.5.37,Tanay,Shah ,2021B3A70994G,f20210994@goa.bits-pilani.ac.in
+Zone-2 044,10.1.6.54,Jai,Bhobe ,2021B3A71024G,f20211024@goa.bits-pilani.ac.in
+Zone-2 002,10.1.6.12,Vijay,Guruprasad Dharmaji  ,2021B3A71049G,f20211049@goa.bits-pilani.ac.in
+Zone-2 066,10.1.6.76,Manav,Laddha ,2021B3A71053G,f20211053@goa.bits-pilani.ac.in
+Zone-2 046,10.1.6.56,Pranjal,Lal ,2021B3A71055G,f20211055@goa.bits-pilani.ac.in
+Zone-1 064,10.1.5.74,Aditya,Chechani ,2021B3A71070G,f20211070@goa.bits-pilani.ac.in
+Zone-2 005,10.1.6.15,Anushka,Sethi ,2021B3A71074G,f20211074@goa.bits-pilani.ac.in
+Zone-2 063,10.1.6.73,Harsh,Vardhan Poddar  ,2021B3A71086G,f20211086@goa.bits-pilani.ac.in
+Zone-2 115,10.1.6.125,Dishant,Surana ,2021B3A71114G,f20211114@goa.bits-pilani.ac.in
+Zone-2 004,10.1.6.14,Jainilkumar,Parmar ,2021B3A71123G,f20211123@goa.bits-pilani.ac.in
+Zone-2 077,10.1.6.87,Rishabh,Khandelwal ,2021B3A71207G,f20211207@goa.bits-pilani.ac.in
+Zone-1 071,10.1.5.81,Prathik,Shetty,2021B3A71317G,f20211317@goa.bits-pilani.ac.in
+Zone-3B 030,10.1.7.90,Krupali,Jadhav ,2021B3A71612G,f20211612@goa.bits-pilani.ac.in
+Zone-3B 020,10.1.7.80,Tanishq,Sinha ,2021B3A71754G,f20211754@goa.bits-pilani.ac.in
+Zone-1 026,10.1.5.36,Hursh,Sethiya ,2021B3A71878G,f20211878@goa.bits-pilani.ac.in
+Zone-1 099,10.1.5.109,Vivek,Mehta ,2021B3A71903G,f20211903@goa.bits-pilani.ac.in
+Zone-1 109,10.1.5.119,Vishesh,Kumar Kasliwal ,2021B3A71933G,f20211933@goa.bits-pilani.ac.in
+Zone-3B 051,10.1.7.111,Vedant Shende,.,2021B3A72136G,f20212136@goa.bits-pilani.ac.in
+Zone-1 021,10.1.5.31,Maunil,Parikh ,2021B3A72142G,f20212142@goa.bits-pilani.ac.in
+Zone-2 017,10.1.6.27,Tanishka,Parth Sugandhi  ,2021B3A72143G,f20212143@goa.bits-pilani.ac.in
+Zone-3B 048,10.1.7.108,Shobhit,Om Kumar  ,2021B3A72155G,f20212155@goa.bits-pilani.ac.in
+Zone-3B 035,10.1.7.95,Nishanth,M S  ,2021B3A72176G,f20212176@goa.bits-pilani.ac.in
+Zone-1 107,10.1.5.117,Arya,Jain ,2021B3A72243G,f20212243@goa.bits-pilani.ac.in
+Zone-3B 021,10.1.7.81,Ali,Kausar Kaamran  ,2021B3A72246G,f20212246@goa.bits-pilani.ac.in
+Zone-1 076,10.1.5.86,Ayush,Srivastava ,2021B3A72462G,f20212462@goa.bits-pilani.ac.in
+Zone-2 089,10.1.6.99,Satvik,Narula ,2021B3A72482G,f20212482@goa.bits-pilani.ac.in
+Zone-1 070,10.1.5.80,Nikhil,Bhat ,2021B3A72541G,f20212541@goa.bits-pilani.ac.in
+Zone-1 010,10.1.5.20,Harsh,Lalai ,2021B3A72665G,f20212665@goa.bits-pilani.ac.in
+Zone-2 064,10.1.6.74,Anudeep,Ch,2021B3A72776G,f20212776@goa.bits-pilani.ac.in
+Zone-2 118,10.1.6.128,Moksha,Modi ,2021B3A72791G,f20212791@goa.bits-pilani.ac.in
+Zone-2 121,10.1.6.131,Anshul,Goel ,2021B3A72863G,f20212863@goa.bits-pilani.ac.in
+Zone-2 104,10.1.6.114,Varun,Khadpe ,2021B3A72864G,f20212864@goa.bits-pilani.ac.in
+Zone-1 128,10.1.5.138,Priyanshu,Kumar ,2021B3A72865G,f20212865@goa.bits-pilani.ac.in
+Zone-2 079,10.1.6.89,Parth,Vaish ,2021B3A72867G,f20212867@goa.bits-pilani.ac.in
+Zone-2 050,10.1.6.60,Tanishq,Jain ,2021B3A72941G,f20212941@goa.bits-pilani.ac.in
+Zone-1 097,10.1.5.107,Garvit,Chittora ,2021B4A71876G,f20211876@goa.bits-pilani.ac.in
+Zone-3B 038,10.1.7.98,Arham,Jain ,2021B4A71882G,f20211882@goa.bits-pilani.ac.in
+Zone-2 080,10.1.6.90,Om,Patel ,2021B4A71948G,f20211948@goa.bits-pilani.ac.in
+Zone-2 014,10.1.6.24,Trisha,Hitesh ,2021B4A72157G,f20212157@goa.bits-pilani.ac.in
+Zone-1 008,10.1.5.18,Achal,Gupta,2021B4A72159G,f20212159@goa.bits-pilani.ac.in
+Zone-1 051,10.1.5.61,Aarohi,Verma ,2021B4A72161G,f20212161@goa.bits-pilani.ac.in
+Zone-2 068,10.1.6.78,Pawani,Agarwal ,2021B4A72165G,f20212165@goa.bits-pilani.ac.in
+Zone-3B 023,10.1.7.83,Pratham,Bhonge ,2021B4A72168G,f20212168@goa.bits-pilani.ac.in
+Zone-2 049,10.1.6.59,Arjun,Puthli ,2021B4A72249G,f20212249@goa.bits-pilani.ac.in
+Zone-2 056,10.1.6.66,Samaahith,G Okkunda  ,2021B4A72431G,f20212431@goa.bits-pilani.ac.in
+Zone-2 065,10.1.6.75,Tanay,Kulkarni ,2021B4A72615G,f20212615@goa.bits-pilani.ac.in
+Zone-1 092,10.1.5.102,Kanishk,.,2021B4A72779G,f20212779@goa.bits-pilani.ac.in
+Zone-2 055,10.1.6.65,Rajdeep,Singh ,2021B4A72945G,f20212945@goa.bits-pilani.ac.in
+Zone-1 044,10.1.5.54,Reuben,Biju George  ,2021B4A73026G,f20213026@goa.bits-pilani.ac.in
+Zone-2 103,10.1.6.113,Anuj,Shikarkhane,2021B5A71145G,f20211145@goa.bits-pilani.ac.in
+Zone-1 068,10.1.5.78,Abhishek,Sensharma ,2021B5A71196G,f20211196@goa.bits-pilani.ac.in
+Zone-1 116,10.1.5.126,Saikrishna,Sudharshan ,2021B5A71645G,f20211645@goa.bits-pilani.ac.in
+Zone-2 112,10.1.6.122,Umang,Sultania ,2021B5A71892G,f20211892@goa.bits-pilani.ac.in
+Zone-3B 010,10.1.7.70,Jay,Sabhaya ,2021B5A72172G,f20212172@goa.bits-pilani.ac.in
+Zone-3B 040,10.1.7.100,Meghana,S Seshasai,2021B5A72517G,f20212517@goa.bits-pilani.ac.in
+Zone-1 126,10.1.5.136,Manav,Jamuar ,2021B5A72638G,f20212638@goa.bits-pilani.ac.in
+Zone-2 041,10.1.6.51,Advay,Burte ,2021B5A72873G,f20212873@goa.bits-pilani.ac.in
+Zone-3B 006,10.1.7.66,Anurag,Singh ,2021B5A72874G,f20212874@goa.bits-pilani.ac.in
+Zone-1 057,10.1.5.67,Shashank,Reddy,2021B5A72951G,f20212951@goa.bits-pilani.ac.in
+Zone-3B 056,10.1.7.116,Aaroshi,R Rao  ,2021B5A72952G,f20212952@goa.bits-pilani.ac.in
+Zone-3B 050,10.1.7.110,Jenil,Shah ,2021B5A73027G,f20213027@goa.bits-pilani.ac.in
+Zone-2 100,10.1.6.110,Ria,Khatoniar ,2021B5A73028G,f20213028@goa.bits-pilani.ac.in
+Zone-2 093,10.1.6.103,Yogesh,Singla ,2021B5A73030G,f20213030@goa.bits-pilani.ac.in
+Zone-2 081,10.1.6.91,Ananya,Vinayak Bhide ,2022A7PS0001G,f20220001@goa.bits-pilani.ac.in
+Zone-2 047,10.1.6.57,Dhruv,Abbi ,2022A7PS0002G,f20220002@goa.bits-pilani.ac.in
+Zone-2 120,10.1.6.130,Siddhant,Salil Mahajan ,2022A7PS0003G,f20220003@goa.bits-pilani.ac.in
+Zone-1 029,10.1.5.39,Aryan,Ajit Deshpande ,2022A7PS0004G,f20220004@goa.bits-pilani.ac.in
+Zone-1 100,10.1.5.110,Neha,Venkatesh Mutalik Desai,2022A7PS0005G,f20220005@goa.bits-pilani.ac.in
+Zone-2 040,10.1.6.50,Rupali,Rajesh ,2022A7PS0006G,f20220006@goa.bits-pilani.ac.in
+Zone-2 108,10.1.6.118,Ishita,Godani ,2022A7PS0007G,f20220007@goa.bits-pilani.ac.in
+Zone-1 084,10.1.5.94,Rucha,Pathak,2022A7PS0008G,f20220008@goa.bits-pilani.ac.in
+Zone-1 093,10.1.5.103,Trisha,L Reddy ,2022A7PS0009G,f20220009@goa.bits-pilani.ac.in
+Zone-1 063,10.1.5.73,Olivia,Gunda ,2022A7PS0010G,f20220010@goa.bits-pilani.ac.in
+Zone-2 033,10.1.6.43,Jay,Ramanathan ,2022A7PS0013G,f20220013@goa.bits-pilani.ac.in
+Zone-1 007,10.1.5.17,Rahul,Prasath ,2022A7PS0016G,f20220016@goa.bits-pilani.ac.in
+Zone-2 031,10.1.6.41,Amrita,Pochiraju ,2022A7PS0017G,f20220017@goa.bits-pilani.ac.in
+Zone-2 124,10.1.6.134,Bhuvan,Satrasala ,2022A7PS0018G,f20220018@goa.bits-pilani.ac.in
+Zone-3B 060,10.1.7.120,Shubham,Amod Dani ,2022A7PS0019G,f20220019@goa.bits-pilani.ac.in
+Zone-2 119,10.1.6.129,Archita,Ganesh Sindigi ,2022A7PS0021G,f20220021@goa.bits-pilani.ac.in
+Zone-1 042,10.1.5.52,Tarun,Chauhan ,2022A7PS0025G,f20220025@goa.bits-pilani.ac.in
+Zone-1 129,10.1.5.139,Somanshu,Rath ,2022A7PS0032G,f20220032@goa.bits-pilani.ac.in
+Zone-2 069,10.1.6.79,Aditya,Gulati ,2022A7PS0040G,f20220040@goa.bits-pilani.ac.in
+Zone-3B 055,10.1.7.115,Aditya,Agarwal ,2022A7PS0050G,f20220050@goa.bits-pilani.ac.in
+Zone-1 005,10.1.5.15,Tanish,Desai ,2022A7PS0053G,f20220053@goa.bits-pilani.ac.in
+Zone-1 108,10.1.5.118,Ankur,Mudugu ,2022A7PS0054G,f20220054@goa.bits-pilani.ac.in
+Zone-2 032,10.1.6.42,Avanish,Dhananjay Mohgaonkar  ,2022A7PS0067G,f20220067@goa.bits-pilani.ac.in
+Zone-3B 025,10.1.7.85,Prateek,Talwar ,2022A7PS0072G,f20220072@goa.bits-pilani.ac.in
+Zone-1 081,10.1.5.91,Sarthak,Jain ,2022A7PS0074G,f20220074@goa.bits-pilani.ac.in
+Zone-2 051,10.1.6.61,Yash,Pratap Singh  ,2022A7PS0076G,f20220076@goa.bits-pilani.ac.in
+Zone-1 067,10.1.5.77,Dhruv,Pandey ,2022A7PS0077G,f20220077@goa.bits-pilani.ac.in
+Zone-1 043,10.1.5.53,Aditya,Gupta ,2022A7PS0090G,f20220090@goa.bits-pilani.ac.in
+Zone-1 096,10.1.5.106,Ronit,Kunkolienker ,2022A7PS0091G,f20220091@goa.bits-pilani.ac.in
+Zone-2 117,10.1.6.127,Chinmay,Ramdas Rao  ,2022A7PS0106G,f20220106@goa.bits-pilani.ac.in
+Zone-1 006,10.1.5.16,Balasubramanian,Gopalakrishnan ,2022A7PS0108G,f20220108@goa.bits-pilani.ac.in
+Zone-1 032,10.1.5.42,Nayan,Gogari ,2022A7PS0116G,f20220116@goa.bits-pilani.ac.in
+Zone-1 050,10.1.5.60,Parv,Jain ,2022A7PS0121G,f20220121@goa.bits-pilani.ac.in
+Zone-2 037,10.1.6.47,Druva,Dhakshinamoorthy ,2022A7PS0131G,f20220131@goa.bits-pilani.ac.in
+Zone-2 007,10.1.6.17,Yathin,S ,2022A7PS0132G,f20220132@goa.bits-pilani.ac.in
+Zone-1 019,10.1.5.29,Vikhyat,Khandelwal ,2022A7PS0142G,f20220142@goa.bits-pilani.ac.in
+Zone-2 052,10.1.6.62,Akshat,Gosain ,2022A7PS0154G,f20220154@goa.bits-pilani.ac.in
+Zone-3B 033,10.1.7.93,Rohit,Raj ,2022A7PS0157G,f20220157@goa.bits-pilani.ac.in
+Zone-1 083,10.1.5.93,Prisha,Gupta ,2022A7PS0164G,f20220164@goa.bits-pilani.ac.in
+Zone-2 071,10.1.6.81,Swapnil,Soni ,2022A7PS0181G,f20220181@goa.bits-pilani.ac.in
+Zone-2 060,10.1.6.70,Garv,Gupta ,2022A7PS0207G,f20220207@goa.bits-pilani.ac.in
+Zone-2 015,10.1.6.25,T,Saket Hatwar  ,2022A7PS0214G,f20220214@goa.bits-pilani.ac.in
+Zone-2 073,10.1.6.83,Taksh,Paresh Patel  ,2022A7PS0215G,f20220215@goa.bits-pilani.ac.in
+Zone-1 034,10.1.5.44,Saurav,Sahoo ,2022A7PS0217G,f20220217@goa.bits-pilani.ac.in
+Zone-1 072,10.1.5.82,Naitik,Verma ,2022A7PS0232G,f20220232@goa.bits-pilani.ac.in
+Zone-1 112,10.1.5.122,Aarsh,Agrawal ,2022A7PS0234G,f20220234@goa.bits-pilani.ac.in
+Zone-1 077,10.1.5.87,Ayananshu,Mohanty ,2022A7PS0239G,f20220239@goa.bits-pilani.ac.in
+Zone-2 092,10.1.6.102,Arnav,Mangla ,2022A7PS0244G,f20220244@goa.bits-pilani.ac.in
+Zone-1 103,10.1.5.113,Vrishti,Godhwani ,2022A7PS0260G,f20220260@goa.bits-pilani.ac.in
+Zone-1 024,10.1.5.34,Yash,Chaphekar ,2022A7PS0262G,f20220262@goa.bits-pilani.ac.in
+Zone-2 090,10.1.6.100,Soham,Khadilkar ,2022A7PS0277G,f20220277@goa.bits-pilani.ac.in
+Zone-2 094,10.1.6.104,Pranav,Anand ,2022A7PS0289G,f20220289@goa.bits-pilani.ac.in
+Zone-2 082,10.1.6.92,Mitta,Manish Gupta  ,2022A7PS0292G,f20220292@goa.bits-pilani.ac.in
+Zone-1 086,10.1.5.96,Yash,Jhawar ,2022A7PS0299G,f20220299@goa.bits-pilani.ac.in
+Zone-1 028,10.1.5.38,Deepankur,Jain ,2022A7PS0317G,f20220317@goa.bits-pilani.ac.in
+Zone-2 122,10.1.6.132,Priyanshu,Choubey ,2022A7PS0318G,f20220318@goa.bits-pilani.ac.in
+Zone-1 111,10.1.5.121,Utkarsh,Misra ,2022A7PS0325G,f20220325@goa.bits-pilani.ac.in
+Zone-3B 028,10.1.7.88,Moksh,Handa ,2022A7PS0334G,f20220334@goa.bits-pilani.ac.in
+Zone-1 038,10.1.5.48,Mitra,Shah ,2022A7PS0335G,f20220335@goa.bits-pilani.ac.in
+Zone-1 060,10.1.5.70,Shrey,Saraf ,2022A7PS0336G,f20220336@goa.bits-pilani.ac.in
+Zone-2 054,10.1.6.64,Mihika,Singhal ,2022A7PS0345G,f20220345@goa.bits-pilani.ac.in
+Zone-1 065,10.1.5.75,Mohak,Jain ,2022A7PS0350G,f20220350@goa.bits-pilani.ac.in
+Zone-2 096,10.1.6.106,Pranav,Siby ,2022A7PS0356G,f20220356@goa.bits-pilani.ac.in
+Zone-3B 013,10.1.7.73,Shrijat,Majumdar ,2022A7PS0361G,f20220361@goa.bits-pilani.ac.in
+Zone-3B 053,10.1.7.113,Akshat,Goswami ,2022A7PS0364G,f20220364@goa.bits-pilani.ac.in
+Zone-1 012,10.1.5.22,Vandan,Sheetalkumar Doshi  ,2022A7PS0369G,f20220369@goa.bits-pilani.ac.in
+Zone-2 091,10.1.6.101,Shriyansh,S. Kumar  ,2022A7PS0370G,f20220370@goa.bits-pilani.ac.in
+Zone-1 052,10.1.5.62,Kshitij,Vispute ,2022A7PS0372G,f20220372@goa.bits-pilani.ac.in
+Zone-3B 058,10.1.7.118,Ishaan,Thakkar ,2022A7PS0378G,f20220378@goa.bits-pilani.ac.in
+Zone-1 130,10.1.5.140,Raghav,Singh ,2022A7PS0382G,f20220382@goa.bits-pilani.ac.in
+Zone-1 087,10.1.5.97,Aditya,Tailor ,2022A7PS0389G,f20220389@goa.bits-pilani.ac.in
+Zone-1 062,10.1.5.72,Aashay,Naik ,2022A7PS0409G,f20220409@goa.bits-pilani.ac.in
+Zone-2 101,10.1.6.111,Swetank,Rao ,2022A7PS0434G,f20220434@goa.bits-pilani.ac.in
+Zone-1 094,10.1.5.104,Kushagra,Malviya ,2022A7PS0436G,f20220436@goa.bits-pilani.ac.in
+Zone-1 033,10.1.5.43,Subroto,Majumder ,2022A7PS0447G,f20220447@goa.bits-pilani.ac.in
+Zone-1 110,10.1.5.120,Abhishek,Dhekane ,2022A7PS0453G,f20220453@goa.bits-pilani.ac.in
+Zone-3B 036,10.1.7.96,Krishna,Sharma ,2022A7PS0457G,f20220457@goa.bits-pilani.ac.in
+Zone-2 074,10.1.6.84,Jangam,Vamsi Preetham  ,2022A7PS0463G,f20220463@goa.bits-pilani.ac.in
+Zone-2 107,10.1.6.117,Samarth,Nagpal ,2022A7PS0475G,f20220475@goa.bits-pilani.ac.in
+Zone-2 010,10.1.6.20,Krishna,Brinda Kanumilli  ,2022A7PS0478G,f20220478@goa.bits-pilani.ac.in
+Zone-2 022,10.1.6.32,Parth,Naik ,2022A7PS0491G,f20220491@goa.bits-pilani.ac.in
+Zone-1 095,10.1.5.105,Akhil,Sai Katta  ,2022A7PS0495G,f20220495@goa.bits-pilani.ac.in
+Zone-1 125,10.1.5.135,Aditya,Bagla ,2022A7PS0497G,f20220497@goa.bits-pilani.ac.in
+Zone-2 039,10.1.6.49,Anish,Shastry ,2022A7PS0500G,f20220500@goa.bits-pilani.ac.in
+Zone-3B 043,10.1.7.103,Abheshek,Murugan ,2022A7PS0511G,f20220511@goa.bits-pilani.ac.in
+Zone-2 106,10.1.6.116,Samarth,Bahuguna ,2022A7PS0518G,f20220518@goa.bits-pilani.ac.in
+Zone-1 069,10.1.5.79,Venkata,Jaya Ram Gali ,2022A7PS0528G,f20220528@goa.bits-pilani.ac.in
+Zone-2 095,10.1.6.105,Arjun,Jagtap ,2022A7PS0545G,f20220545@goa.bits-pilani.ac.in
+Zone-1 105,10.1.5.115,Naman,Bhatia ,2022A7PS0559G,f20220559@goa.bits-pilani.ac.in
+Zone-3B 016,10.1.7.76,Daksh,Arora ,2022A7PS0563G,f20220563@goa.bits-pilani.ac.in
+Zone-1 132,10.1.5.142,Vandit,Kharod ,2022A7PS0564G,f20220564@goa.bits-pilani.ac.in
+Zone-1 058,10.1.5.68,Siddharth,Chaitra Vivek  ,2022A7PS0569G,f20220569@goa.bits-pilani.ac.in
+Zone-2 061,10.1.6.71,Kshitij,Simha R  ,2022A7PS0572G,f20220572@goa.bits-pilani.ac.in
+Zone-3B 018,10.1.7.78,Rishabh,Gupta ,2022A7PS0584G,f20220584@goa.bits-pilani.ac.in
+Zone-3B 003,10.1.7.63,Rohan,Chaitanya Nadkarni  ,2022A7PS0597G,f20220597@goa.bits-pilani.ac.in
+Zone-1 091,10.1.5.101,Aryia,Samir Wadekar  ,2022A7PS0599G,f20220599@goa.bits-pilani.ac.in
+Zone-2 097,10.1.6.107,Ayushman,Kumar ,2022A7PS0600G,f20220600@goa.bits-pilani.ac.in
+Zone-2 057,10.1.6.67,Ashit,Jain ,2022A7PS0606G,f20220606@goa.bits-pilani.ac.in
+Zone-2 105,10.1.6.115,Aditya,Chaudhary ,2022A7PS0622G,f20220622@goa.bits-pilani.ac.in
+Zone-1 047,10.1.5.57,Jainam,Mehta ,2022A7PS0631G,f20220631@goa.bits-pilani.ac.in
+Zone-1 035,10.1.5.45,Manan,Jain ,2022A7PS0638G,f20220638@goa.bits-pilani.ac.in
+Zone-1 075,10.1.5.85,Chhavi,Soni ,2022A7PS0639G,f20220639@goa.bits-pilani.ac.in
+Zone-2 110,10.1.6.120,Adityaayush,Singh ,2022A7PS0640G,f20220640@goa.bits-pilani.ac.in
+Zone-2 026,10.1.6.36,S,Mohammed Ashraf  ,2022A7PS0645G,f20220645@goa.bits-pilani.ac.in
+Zone-1 104,10.1.5.114,Anirudh,Sharma ,2022A7PS0657G,f20220657@goa.bits-pilani.ac.in
+Zone-1 030,10.1.5.40,Vikram,Virat Chiluveru  ,2022A7PS0665G,f20220665@goa.bits-pilani.ac.in
+Zone-2 009,10.1.6.19,Param,Gandhi ,2022A7PS0676G,f20220676@goa.bits-pilani.ac.in
+Zone-1 009,10.1.5.19,Priyansh,Jain ,2022A7PS0692G,f20220692@goa.bits-pilani.ac.in
+Zone-2 086,10.1.6.96,Gaurav,Singh ,2022A7PS0693G,f20220693@goa.bits-pilani.ac.in
+Zone-1 082,10.1.5.92,Sharvil,Potdar ,2022A7PS0724G,f20220724@goa.bits-pilani.ac.in
+Zone-2 042,10.1.6.52,Chaitanya,Joshi ,2022A7PS0730G,f20220730@goa.bits-pilani.ac.in
+Zone-1 101,10.1.5.111,Kshitij,Takale ,2022A7PS0739G,f20220739@goa.bits-pilani.ac.in
+Zone-3B 015,10.1.7.75,Ajinkya,A Deshpande  ,2022A7PS0746G,f20220746@goa.bits-pilani.ac.in
+Zone-1 022,10.1.5.32,Nikhil,Vinay ,2022A7PS0747G,f20220747@goa.bits-pilani.ac.in
+Zone-3B 001,10.1.7.61,Sanskar,Mundhra ,2022A7PS0757G,f20220757@goa.bits-pilani.ac.in
+Zone-1 119,10.1.5.129,Mokshith,Reddy Vuribindi  ,2022A7PS0763G,f20220763@goa.bits-pilani.ac.in
+Zone-2 003,10.1.6.13,Ayush,Pareek ,2022A7PS0788G,f20220788@goa.bits-pilani.ac.in
+Zone-2 059,10.1.6.69,Kartavya,Dubey ,2022A7PS0795G,f20220795@goa.bits-pilani.ac.in
+Zone-2 075,10.1.6.85,Aadi,Sharma ,2022A7PS0797G,f20220797@goa.bits-pilani.ac.in
+Zone-1 102,10.1.5.112,Amogh,Upadhyay ,2022A7PS0800G,f20220800@goa.bits-pilani.ac.in
+Zone-1 054,10.1.5.64,Mehak,Garg ,2022A7PS0803G,f20220803@goa.bits-pilani.ac.in
+Zone-1 074,10.1.5.84,Venkata,Akash Mandla  ,2022A7PS0807G,f20220807@goa.bits-pilani.ac.in
+Zone-2 098,10.1.6.108,Harshith,P Gowda  ,2022A7PS0875G,f20220875@goa.bits-pilani.ac.in
+Zone-1 014,10.1.5.24,Ronan,Coutinho ,2022A7PS1077G,f20221077@goa.bits-pilani.ac.in
+Zone-1 023,10.1.5.33,Priya,Rathi ,2022A7PS1096G,f20221096@goa.bits-pilani.ac.in
+Zone-2 076,10.1.6.86,Jayanth,K V R   ,2022A7PS1102G,f20221102@goa.bits-pilani.ac.in
+Zone-2 109,10.1.6.119,Yash,Agarwal ,2022A7PS1104G,f20221104@goa.bits-pilani.ac.in
+Zone-1 036,10.1.5.46,Saumya,Kathuria ,2022A7PS1106G,f20221106@goa.bits-pilani.ac.in
+Zone-2 058,10.1.6.68,Vageesha,Gupta ,2022A7PS1107G,f20221107@goa.bits-pilani.ac.in
+Zone-3B 031,10.1.7.91,Aditya,Sharma ,2022A7PS1108G,f20221108@goa.bits-pilani.ac.in
+Zone-2 083,10.1.6.93,Arul,Bhardwaj ,2022A7PS1111G,f20221111@goa.bits-pilani.ac.in
+Zone-1 090,10.1.5.100,Amogh,Malagi ,2022A7PS1113G,f20221113@goa.bits-pilani.ac.in
+Zone-1 085,10.1.5.95,Araav,Gupta ,2022A7PS1114G,f20221114@goa.bits-pilani.ac.in
+Zone-2 027,10.1.6.37,Shrey,Gupta ,2022A7PS1121G,f20221121@goa.bits-pilani.ac.in
+Zone-1 124,10.1.5.134,Spandan,Kahate ,2022A7PS1123G,f20221123@goa.bits-pilani.ac.in
+Zone-1 122,10.1.5.132,Param,Pratap ,2022A7PS1124G,f20221124@goa.bits-pilani.ac.in
+Zone-2 088,10.1.6.98,Anwesh,Das ,2022A7PS1127G,f20221127@goa.bits-pilani.ac.in
+Zone-2 030,10.1.6.40,Divyanshu,Singh ,2022A7PS1129G,f20221129@goa.bits-pilani.ac.in
+Zone-2 024,10.1.6.34,Samar,Jalil Siddiqui  ,2022A7PS1135G,f20221135@goa.bits-pilani.ac.in
+Zone-2 085,10.1.6.95,Naman,Kamra ,2022A7PS1142G,f20221142@goa.bits-pilani.ac.in
+Zone-1 039,10.1.5.49,Prakhar,Kumar Gupta  ,2022A7PS1145G,f20221145@goa.bits-pilani.ac.in
+Zone-1 078,10.1.5.88,Shounak,Kulkarni,2022A7PS1151G,f20221151@goa.bits-pilani.ac.in
+Zone-2 053,10.1.6.63,Kshitij,Dale ,2022A7PS1153G,f20221153@goa.bits-pilani.ac.in
+Zone-2 001,10.1.6.11,Advik,Raj Basani,2022A7PS1155G,f20221155@goa.bits-pilani.ac.in
+Zone-2 036,10.1.6.46,Shiv,Patel ,2022A7PS1157G,f20221157@goa.bits-pilani.ac.in
+Zone-2 011,10.1.6.21,Aditya,Shiva Sharma    ,2022A7PS1159G,f20221159@goa.bits-pilani.ac.in
+Zone-1 121,10.1.5.131,Hruday,K,2022A7PS1161G,f20221161@goa.bits-pilani.ac.in
+Zone-2 008,10.1.6.18,Sravani,Bobba,2022A7PS1166G,f20221166@goa.bits-pilani.ac.in
+Zone-1 025,10.1.5.35,Parth,Shah ,2022A7PS1168G,f20221168@goa.bits-pilani.ac.in
+Zone-1 073,10.1.5.83,Animish,Payal ,2022A7PS1175G,f20221175@goa.bits-pilani.ac.in
+Zone-2 013,10.1.6.23,Keshav,Goyal ,2022A7PS1176G,f20221176@goa.bits-pilani.ac.in
+Zone-2 084,10.1.6.94,Devansh,Sharma ,2022A7PS1177G,f20221177@goa.bits-pilani.ac.in
+Zone-1 013,10.1.5.23,Shubham,Chaurasiya ,2022A7PS1181G,f20221181@goa.bits-pilani.ac.in
+Zone-1 131,10.1.5.141,Jainam,Shah ,2022A7PS1182G,f20221182@goa.bits-pilani.ac.in
+Zone-1 048,10.1.5.58,Manas,Tomar ,2022A7PS1184G,f20221184@goa.bits-pilani.ac.in
+Zone-3B 045,10.1.7.105,Krishna,Narwade ,2022A7PS1185G,f20221185@goa.bits-pilani.ac.in
+Zone-1 098,10.1.5.108,Alankrit,Singh ,2022A7PS1186G,f20221186@goa.bits-pilani.ac.in
+Zone-2 020,10.1.6.30,Narayan,Agarwal ,2022A7PS1191G,f20221191@goa.bits-pilani.ac.in
+Zone-2 025,10.1.6.35,Unnabh,Rathod,2022A7PS1193G,f20221193@goa.bits-pilani.ac.in
+Zone-1 017,10.1.5.27,Vineet,Krishna ,2022A7PS1197G,f20221197@goa.bits-pilani.ac.in
+Zone-2 062,10.1.6.72,Kartik,Khanchi ,2022A7PS1200G,f20221200@goa.bits-pilani.ac.in
+Zone-1 040,10.1.5.50,Harsh,Sanjeev Baranwal,2022A7PS1201G,f20221201@goa.bits-pilani.ac.in
+Zone-1 113,10.1.5.123,Aseem,Mathur ,2022A7PS1202G,f20221202@goa.bits-pilani.ac.in
+Zone-1 123,10.1.5.133,Atharva,Singh Rathore,2022A7PS1203G,f20221203@goa.bits-pilani.ac.in
+Zone-2 038,10.1.6.48,Varun,Lale ,2022A7PS1208G,f20221208@goa.bits-pilani.ac.in
+Zone-2 078,10.1.6.88,Pranjay,Yelkotwar,2022A7PS1209G,f20221209@goa.bits-pilani.ac.in
+Zone-2 034,10.1.6.44,Eshitv,Kumar ,2022A7PS1221G,f20221221@goa.bits-pilani.ac.in
+Zone-2 012,10.1.6.22,Ashutosh,Swain ,2022A7PS1223G,f20221223@goa.bits-pilani.ac.in
+Zone-2 016,10.1.6.26,Amogh,Balepur ,2022A7PS1228G,f20221228@goa.bits-pilani.ac.in
+Zone-2 023,10.1.6.33,Pratham,Uppal ,2022A7PS1231G,f20221231@goa.bits-pilani.ac.in
+Zone-2 021,10.1.6.31,Ketala,Sohan Kumar  ,2022A7PS1233G,f20221233@goa.bits-pilani.ac.in
+Zone-2 067,10.1.6.77,Madhul,Aggarwal ,2022A7PS1236G,f20221236@goa.bits-pilani.ac.in
+Zone-1 004,10.1.5.14,Satvik,Jain ,2022A7PS1237G,f20221237@goa.bits-pilani.ac.in
+Zone-1 118,10.1.5.128,Pray,Raskapoorwala ,2022A7PS1239G,f20221239@goa.bits-pilani.ac.in
+Zone-1 055,10.1.5.65,Paras,Topwal,2022A7PS1243G,f20221243@goa.bits-pilani.ac.in
+Zone-2 018,10.1.6.28,Kartik,Chauhan ,2022A7PS1255G,f20221255@goa.bits-pilani.ac.in
+Zone-1 031,10.1.5.41,Uday,Gupta ,2022A7PS1258G,f20221258@goa.bits-pilani.ac.in
+Zone-2 048,10.1.6.58,Arkaprava,Roy ,2022A7PS1259G,f20221259@goa.bits-pilani.ac.in
+Zone-3B 011,10.1.7.71,Arnav,Malhotra ,2022A7PS1261G,f20221261@goa.bits-pilani.ac.in
+Zone-3B 041,10.1.7.101,Aman,Sisodiya ,2022A7PS1263G,f20221263@goa.bits-pilani.ac.in
+Zone-1 114,10.1.5.124,Ketav,Chirag Shah    ,2022A7PS1265G,f20221265@goa.bits-pilani.ac.in
+Zone-1 011,10.1.5.21,Veer,Bansal ,2022A7PS1268G,f20221268@goa.bits-pilani.ac.in
+Zone-2 028,10.1.6.38,Vansh,Agarwal ,2022A7PS1273G,f20221273@goa.bits-pilani.ac.in
+Zone-1 079,10.1.5.89,Mahir,Jimit Ghadiali,2022A7PS1274G,f20221274@goa.bits-pilani.ac.in
+Zone-1 088,10.1.5.98,Lasya,Sandhu ,2022A7PS1347G,f20221347@goa.bits-pilani.ac.in
+Zone-1 127,10.1.5.137,Michael,Lewis ,2022A7PS1348G,f20221348@goa.bits-pilani.ac.in
+Zone-1 080,10.1.5.90,Raghuram,Aluru ,2022A7PS1349G,f20221349@goa.bits-pilani.ac.in
+Zone-2 029,10.1.6.39,Guntaas,Singh Aneja ,2022A7PS1525G,f20221525@goa.bits-pilani.ac.in
+Zone-1 049,10.1.5.59,Aryan,Goyal ,2022A7PS1526G,f20221526@goa.bits-pilani.ac.in
+Zone-2 006,10.1.6.16,Arnav,Kumbhar ,2022A7PS1527G,f20221527@goa.bits-pilani.ac.in
+Zone-2 035,10.1.6.45,,,,
+Zone-2 070,10.1.6.80,,,,
+Zone-2 045,10.1.6.55,,,,
+Zone-2 123,10.1.6.133,,,,
+Zone-1 046,10.1.5.56,,,,
+Zone-1 059,10.1.5.69,,,,
+Zone-3B 026,10.1.7.86,,,,
+Zone-1 066,10.1.5.76,,,,
+Zone-1 053,10.1.5.63,,,,

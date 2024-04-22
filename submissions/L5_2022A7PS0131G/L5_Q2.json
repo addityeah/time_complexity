@@ -1,0 +1,170 @@
+[
+    {
+        "timestamp": "2024-02-23 16:22:40",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    for(int start = i * k + 1; i<i * k + 5; i++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    if( largest != i){\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    for(int i = A.size()/k + 1; i >=0; i--){\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "f396399bb9fc448b5345b6cae03c595bebe48a2517fd821aeaf5f8d5c19c462a",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:23:25",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    for(int start = i * k + 1; i<i * k + k + 1; i++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    if( largest != i){\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    for(int i = A.size()/k + 1; i >=0; i--){\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "c087c75f0b527d98daa118e053d49fd8f767a2a40d3f0e5e3c60e17bf108da55",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:23:52",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    for(int start = i * k + 1; i<i * k + k + 1; i++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    for(int i = A.size()/k + 1; i >=0; i--){\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "b286dca83c9b9e62b39d38e5396d06ecf1b5baa4802b795642b8f17806cbaace",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:25:00",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    for(int start = i * k + 1; i<i * k + k + 1; i++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "7768fd779f9442cd319f862380b2373b6c820c329cf4d8017f3a259c065d0dbd",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:27:55",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    for(int start = i * k + 1; start<i * k + k + 1; start++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    cout<<\"HI\";\n    return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "8445a091c565131269ddd774b1a7296dab9a35c869d78dc6e3364b58fee8f3bf",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:29:11",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n\n    for(int start = i * k + 1; start<i * k + k + 1; start++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i;\n        // maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "ec577da37db54f8453fe7ba621587f17b4ed662838f6139e1f8e48882c4acc3e",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:30:39",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n\n    for(int start = i * k + 1; start<i * k + k + 1; start++){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n    }\n    cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<\" size\";\n        // maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "ac4d034c733d5cc315d4d23b24701bc4682835b955f5b2a83ee4a8c890db94cd",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:35:33",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n\n    while(start < i * k + 2){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n        start++;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<\" size\";\n        // maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "0e6b3798d9588452d175e4d88fd25efc0999235f03479fcb9c8611e29c2c9bc2",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:36:20",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n\n    while(start < i * k + 2){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n        start++;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        // maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "255f7726f03cf99ab2b3ac84cafcec66460cb5449da955cda87f6aa370d23312",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:36:40",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n    return;\n    while(start < i * k + 2){\n        if(start < A.size() && A[start] > A[largest]){\n            start= largest;\n        }\n        start++;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "b71e8cb58b49f16b0cd7246701f418b49c48b2d71006bde31bab09ee5eeac5b2",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:37:49",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    cout<<largest<<\" \"<<i;\n    // return;\n    while(start < i * k + 2){\n        cout<<start;\n        if(start < A.size()){\n            if(A[start] > A[largest]){\n            start= largest;\n        }}\n        start++;\n        return;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "43c56b8928653e72a67d56b54400b47e20af550f0452bfbb85a4037ec0b10f30",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:38:00",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k + 1;\n    int largest = i;\n    // cout<<largest<<\" \"<<i;\n    // return;\n    while(start < i * k + 2){\n        cout<<start;\n        if(start < A.size()){\n            if(A[start] > A[largest]){\n            start= largest;\n        }}\n        start++;\n        return;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "e6b0d8e77a82dcc92d89a02407a0f8851925038925aeeba047f2169f4a268089",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:40:52",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k +1;\n    int maxi = i * k + k +1;\n    int largest = i;\n    cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < i * k + 2){\n        cout<<start;\n        if(start < A.size()){\n            if(A[start] > A[largest]){\n            start= largest;\n        }}\n        start++;\n        return;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "330d3b2374a54a58427eb0fa6945b867f857fff8f99f1c124b33a8539227ade0",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:41:21",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k +1;\n    int maxi = i * k + k +1;\n    int largest = i;\n    cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < i * k + 2 && start < A.size()){\n        cout<<start;\n            if(A[start] > A[largest]){\n            start= largest;\n        }\n        start++;\n        return;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "88d98a15728d05467db0e090de62a61bb90ff90891bf2e23952f927f0d8ca635",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:42:15",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k +1;\n    int maxi = i * k + k +1;\n    int largest = i;\n    cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        cout<<start;\n            if(A[start] > A[largest]){\n            start= largest;\n        }\n        start++;\n        return;\n    }\n    cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "f9a6ceaa395edf9f8bb9db25788f9b0a3bca8f2a40093307d4b801765ac0d579",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:44:21",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        start++;\n        cout<<start<<\" start\";\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    // cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    // if( largest != i){\n    //     cout<<largest<<\" \"<<i;\n    //     swap(A[largest], A[i]);\n    //     // maxHeapify(A, k, largest);\n    // }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "0cb365c47d0d7df0bb708423acb8e93bce6395b0f85b3f8fd868b727ed9e3950",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:44:34",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    // cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        start++;\n        // cout<<start<<\" start\";\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    // cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "8ace78d8eb22d14ff86fe69298420279cac2789326c10ee5ebbe219170d6b9ee",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:44:44",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    // cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        start++;\n        // cout<<start<<\" start\";\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    // cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        // cout<<i<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "5089c4014fee31647f561d5344255d5ae6ebfd42852c84f7f7e7e18ab79d1b4a",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:46:54",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    // cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        start++;\n        // cout<<start<<\" start\";\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    // cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "2b90a17f4937188167773816c479e2f542b0ef5f6e7aa894735ec726c7b05142",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:47:09",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    // cout<<maxi<<\" \"<<start;\n    // return;\n    while(start < A.size() && start < maxi){\n        start++;\n        // cout<<start<<\" start\";\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    // cout<<start;\n    // cout<<largest<<\" \"<<i;\n\n    if( largest != i){\n        // cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        // maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "ffd54e6b4aefd0ee9529be319c8c5b697d8eceec31342a546c59702c49bd8ea8",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:47:56",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k;\n    int maxi = i * k + k;\n    int largest = i;\n    while(start < A.size() && start < maxi){\n        start++;\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        \n    }\n    if( largest != i){\n        // cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        // cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "51620e476b9bffa42641c6e823ed418c80af8517a0d108e861085e1296274eb2",
+        "testcase": "T1",
+        "testcasePassed": 0
+    },
+    {
+        "timestamp": "2024-02-23 16:49:18",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k+1;\n    int maxi = i * k + k+1;\n    int largest = i;\n    while(start < A.size() && start < maxi){\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        start++;\n\n        \n    }\n    if( largest != i){\n        // cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        // cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "a2d447b76106435659ce438b70052084196e8d39f0c2f16a40b35f535cf2f5b0",
+        "testcase": "T1",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:49:22",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k+1;\n    int maxi = i * k + k+1;\n    int largest = i;\n    while(start < A.size() && start < maxi){\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        start++;\n\n        \n    }\n    if( largest != i){\n        // cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        // cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "a2d447b76106435659ce438b70052084196e8d39f0c2f16a40b35f535cf2f5b0",
+        "testcase": "T2",
+        "testcasePassed": 1
+    },
+    {
+        "timestamp": "2024-02-23 16:49:28",
+        "program": "#include<bits/stdc++.h>\nusing namespace std;\n\nvoid maxHeapify(vector<int>&A, int k, int i){\n    int start= i * k+1;\n    int maxi = i * k + k+1;\n    int largest = i;\n    while(start < A.size() && start < maxi){\n        if(A[start] > A[largest]){\n            largest= start;\n        }\n        start++;\n\n        \n    }\n    if( largest != i){\n        // cout<<largest<<\" \"<<i;\n        swap(A[largest], A[i]);\n        maxHeapify(A, k, largest);\n    }\n}\n\nvoid solve(vector<int>& A, int k)\n{\n    // cout<<\"HI\";\n    // return;\n    for(int i = (A.size()/k )+ 1; i >=0; i--){\n        // cout<<i<<\": i\"<<endl;\n        maxHeapify(A, k, i);\n    }\n\n\n\n\n}\n",
+        "programHash": "a2d447b76106435659ce438b70052084196e8d39f0c2f16a40b35f535cf2f5b0",
+        "testcase": "T3",
+        "testcasePassed": 1
+    }
+]
