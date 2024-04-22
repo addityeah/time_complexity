@@ -6,7 +6,7 @@ cpp_program = '../L5_template/Q1_Template.cpp'
 input_file = 'testcases.txt'
 
 with open(input_file, 'r') as file:
-    input_data = file.read().strip()
+    input_data = file.read().strip('[').strip(']').strip(',')
 
 start_time = time.time()
 subprocess.run(['g++', cpp_program]) 

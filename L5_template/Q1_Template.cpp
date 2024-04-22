@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "__STUDENTPROGRAM__"
+#include "L5_Q1_2022A7PS0131G.cpp"
 using namespace std;
 
 int main()

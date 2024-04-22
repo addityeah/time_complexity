@@ -5,6 +5,8 @@ def generate_array(size):
 
 array_sizes = [3, 5, 7]
 
+print (len(array_sizes))
 for size in array_sizes:
     array = generate_array(size)
+    print(size)
     print(f"{array}")
