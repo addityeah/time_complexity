@@ -22,4 +22,4 @@ if error:
 
 execution_time = end_time - start_time
 
-print("Execution time:", execution_time)
+print("Execution time:", execution_time*10000)
