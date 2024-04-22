@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#include "L5_Q1_2022A7PS0131G.cpp"
+#include "two_sum_brute.cpp"
 using namespace std;
 
 int main()
@@ -16,6 +16,6 @@ int main()
         vector<int> v(n);
         for(int i=0; i<n; i++)
             cin>>v[i];
-        cout<<solve(v)<<endl;
+        cout<<solve(v, 0)<<endl;
     }
 }
