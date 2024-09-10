@@ -7,3 +7,5 @@ This a simple time complexity analyser for C++ code. The objective of this proje
 2. Run the following command in the terminal
 ``` python3 new_build/testcase_generator.py > new_build/testcases.txt && python3 new_build/tryball.py > new_build/output.txt```
 3. The output will be displayed in the output.txt file
+
+4. Try
